@@ -1,0 +1,69 @@
+{
+  "_vendor.D2XQc0gW.js": {
+    "file": "vendor.D2XQc0gW.js",
+    "name": "vendor"
+  },
+  "resources/css/app.scss": {
+    "file": "app.C03p64cz.css",
+    "src": "resources/css/app.scss",
+    "isEntry": true
+  },
+  "resources/css/fonts/DMSans-Italic.ttf": {
+    "file": "DMSans-Italic.QlAps-ZO.ttf",
+    "src": "resources/css/fonts/DMSans-Italic.ttf"
+  },
+  "resources/css/fonts/DMSans.ttf": {
+    "file": "DMSans.d9KJDlpM.ttf",
+    "src": "resources/css/fonts/DMSans.ttf"
+  },
+  "resources/js/app.js": {
+    "file": "app.CKqfviRB.js",
+    "name": "app",
+    "src": "resources/js/app.js",
+    "isEntry": true,
+    "imports": [
+      "_vendor.D2XQc0gW.js"
+    ],
+    "dynamicImports": [
+      "resources/js/translations/en.json",
+      "resources/js/translations/it.json",
+      "resources/js/views/Main.vue",
+      "resources/js/views/Home.vue",
+      "resources/js/translations/en.json",
+      "resources/js/translations/it.json",
+      "resources/js/translations/en.json"
+    ]
+  },
+  "resources/js/translations/en.json": {
+    "file": "en.C848fxWF.js",
+    "name": "en",
+    "src": "resources/js/translations/en.json",
+    "isDynamicEntry": true
+  },
+  "resources/js/translations/it.json": {
+    "file": "it.BfVcB5Iz.js",
+    "name": "it",
+    "src": "resources/js/translations/it.json",
+    "isDynamicEntry": true
+  },
+  "resources/js/views/Home.vue": {
+    "file": "Home.B8D1_uwz.js",
+    "name": "Home",
+    "src": "resources/js/views/Home.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "resources/js/app.js",
+      "_vendor.D2XQc0gW.js"
+    ]
+  },
+  "resources/js/views/Main.vue": {
+    "file": "Main.CAwJsnaZ.js",
+    "name": "Main",
+    "src": "resources/js/views/Main.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "resources/js/app.js",
+      "_vendor.D2XQc0gW.js"
+    ]
+  }
+}

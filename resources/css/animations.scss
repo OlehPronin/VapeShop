@@ -1,0 +1,63 @@
+.animation-1 {
+    transition: all 0.5s cubic-bezier(0.4, 0.68, 0.07, 0.65) !important;
+}
+
+.animation-2 {
+    transition: all 0.1s cubic-bezier(0.4, 0.68, 0.07, 0.65);
+}
+
+@keyframes leftToRight {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes rightToLeft {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes fade {
+  0% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+  }
+}
+
+$underline-color: var(--white);
+$underline-padding: 2px;
+
+.u-underline {
+  &.t-violet{
+    span {
+      background-image: linear-gradient(transparent calc(100% - #{$underline-padding}), var(--violet) $underline-padding);
+    }
+  }
+  span {
+    transition: background-size 1s ease;
+    width: calc(100% + 1px);
+    padding-bottom: $underline-padding;
+    background-image: linear-gradient(transparent calc(100% - #{$underline-padding}), $underline-color $underline-padding);
+    background-repeat: no-repeat;
+    background-size: 0% 90%;
+  }
+  &:hover, &.active {
+    span {
+      background-size: 100% 90%;
+    }
+  }
+}
+.u-underline__trigger:hover {
+    .u-underline span {
+      background-size: 100% 90%;
+    }
+}
