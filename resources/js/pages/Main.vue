@@ -1,5 +1,5 @@
 <template>
-    TEST
+    TEST-1
 </template>
 
 <script>

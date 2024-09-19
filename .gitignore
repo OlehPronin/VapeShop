@@ -28,3 +28,4 @@ public/images/leagues/*
 /.DS_Store
 /**/.DS_Store
 /storage/get_external_odds.txt
+/vendor
