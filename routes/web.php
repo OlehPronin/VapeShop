@@ -11,6 +11,7 @@ Route::get('/sitemap.xml', [
 Route::middleware(CheckLanguage::class)->prefix('/{lang}')->group(function () {
     Route::get('', [AppController::class, 'index'])->name('main');
     Route::get('/home', [AppController::class, 'index'])->name('home');
+    Route::get('/faq', [AppController::class, 'index'])->name('faq');
 });
 
 Route::get('/{any}', function () {

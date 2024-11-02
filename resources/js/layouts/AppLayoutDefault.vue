@@ -1,16 +1,24 @@
 <template>
-    <section class="">
-        <router-view :key="$route.fullPath"></router-view>
-    </section>
-</template>
-
-<script>
-
-export default {
-    name: "AppLayoutDefault",
-
+      <HeaderComponent />
+      <main>
+        <slot></slot>
+      </main>
+      <FooterComponent />
+  </template>
+  
+  <script>
+  import HeaderComponent from '../components/Header.vue';
+  import FooterComponent from '../components/Footer.vue';
+  
+  export default {
+    name: 'AppLayoutDefault',
     components: {
-
+      HeaderComponent,
+      FooterComponent,
     },
-}
-</script>
+  };
+  </script>
+  
+  <style scoped lang="scss">
+  </style>
+  

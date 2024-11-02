@@ -2,6 +2,6 @@
 
 return [
     'main' => [
-        'title' => "Test EN",
+        'title' => "EN",
     ],
 ];

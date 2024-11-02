@@ -1,0 +1,178 @@
+<template>
+    <div class="general">
+        <div class="text">
+            <p>Tranding Products</p>
+        </div>
+        <div class="center">
+            <div class="one">
+                <Product
+                backgroundImage='/images/cardFon/fon1.png'
+                imageSrc="/images/card/vape1.webp"
+                mainText="PALAX KC8000"
+                subText="36 reviews"
+                price="$18.90"
+                discount="$81.10"
+                rating="5"
+                backgroundColor=""
+                width="256px"
+                height="401px"
+                :colors="{green: '/images/card/vape1.webp', blue: '/images/card/vape2.webp', cyan: '/images/card/vape3.webp', yellow: '/images/card/vape1.webp'}"
+                />
+
+            <Product
+              backgroundImage='/images/cardFon/fon2.png'
+              imageSrc="/images/card/vape1.webp"
+              mainText="PALAX KC8000"
+              subText="36 reviews"
+              price="$18.90"
+              discount="$81.10"
+              rating="5"
+              backgroundColor=""
+              width="256px"
+              height="401px"
+              :colors="{green: '/images/card/vape1.webp', blue: '/images/card/vape2.webp', cyan: '/images/card/vape3.webp', yellow: '/images/card/vape1.webp'}"
+            />
+            <Product
+            backgroundImage='/images/cardFon/fon3.png'
+              imageSrc="/images/card/vape1.webp"
+              mainText="PALAX KC8000"
+              subText="36 reviews"
+              price="$18.90"
+              discount="$81.10"
+              rating="5"
+              backgroundColor=""
+              width="256px"
+              height="401px"
+              :colors="{green: '/images/card/vape1.webp', blue: '/images/card/vape2.webp', cyan: '/images/card/vape3.webp', yellow: '/images/card/vape1.webp'}"
+            />
+            <Product
+            backgroundImage='/images/cardFon/fon4.png'
+              imageSrc="/images/card/vape1.webp"
+              mainText="PALAX KC8000"
+              subText="36 reviews"
+              price="$18.90"
+              discount="$81.10"
+              rating="5"
+              backgroundColor=""
+              width="256px"
+              height="401px"
+              :colors="{green: '/images/card/vape1.webp', blue: '/images/card/vape2.webp', cyan: '/images/card/vape3.webp', yellow: '/images/card/vape1.webp'}"
+            />
+            </div>
+            <div class="two">
+                <Product
+                backgroundImage='/images/cardFon/fon5.png'
+              imageSrc="/images/card/vape1.webp"
+              mainText="PALAX KC8000"
+              subText="36 reviews"
+              price="$18.90"
+              discount="$81.10"
+              rating="5"
+              backgroundColor=""
+              width="256px"
+              height="401px"
+              :colors="{green: '/images/card/vape1.webp', blue: '/images/card/vape2.webp', cyan: '/images/card/vape3.webp', yellow: '/images/card/vape1.webp'}"
+            />
+            <Product
+            backgroundImage='/images/cardFon/fon6.png'
+              imageSrc="/images/card/vape1.webp"
+              mainText="PALAX KC8000"
+              subText="36 reviews"
+              price="$18.90"
+              discount="$81.10"
+              rating="5"
+              backgroundColor=""
+              width="256px"
+              height="401px"
+              :colors="{green: '/images/card/vape1.webp', blue: '/images/card/vape2.webp', cyan: '/images/card/vape3.webp', yellow: '/images/card/vape1.webp'}"
+            />
+            <Product
+            backgroundImage='/images/cardFon/fon7.png'
+              imageSrc="/images/card/vape1.webp"
+              mainText="PALAX KC8000"
+              subText="36 reviews"
+              price="$18.90"
+              discount="$81.10"
+              rating="5"
+              backgroundColor=""
+              width="256px"
+              height="401px"
+              :colors="{green: '/images/card/vape1.webp', blue: '/images/card/vape2.webp', cyan: '/images/card/vape3.webp', yellow: '/images/card/vape1.webp'}"
+            />
+            <Product
+            backgroundImage='/images/cardFon/fon8.png'
+              imageSrc="/images/card/vape1.webp"
+              mainText="PALAX KC8000"
+              subText="36 reviews"
+              price="$18.90"
+              discount="$81.10"
+              rating="5"
+              backgroundColor=""
+              width="256px"
+              height="401px"
+              :colors="{green: '/images/card/vape1.webp', blue: '/images/card/vape2.webp', cyan: '/images/card/vape3.webp', yellow: '/images/card/vape1.webp'}"
+            />
+            </div>
+        </div>
+        <div class="bot">
+
+        </div>
+    </div>
+</template>
+
+<script>
+import Product from '../../components/card/Product.vue';  
+
+export default {
+  name: 'ProductSection',
+  components: {
+    Product,
+  },
+};
+</script>
+  
+<style scoped>
+.general {
+    display: flex;
+    padding: 120px 100px;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    background: #FFF;
+}
+.text {
+    align-self: stretch;
+    color: #000;
+    font-family: Poppins;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+.center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+.one {
+    display: flex;
+    align-items: flex-start;
+    gap: 32px;
+}
+.two {
+    display: flex;
+    align-items: flex-start;
+    gap: 32px;
+}
+.bot {
+    display: flex;
+    padding: 16px 24px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 100px;
+    background: #5EFF44;
+}
+</style>
+  
