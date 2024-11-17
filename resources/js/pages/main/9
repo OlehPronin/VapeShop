@@ -64,10 +64,7 @@
           :key="index"
           :class="['dot', { 'active': currentIndex === index * 3 }]"
           @click="setCurrentIndex(index * 3)"
-        >
-          <div class="inner-dot"></div>
-          <div class="outer-circle"></div>
-        </div>
+        ></div>
       </div>
     </div>
   </div>
@@ -175,51 +172,6 @@ export default {
             yellow: '/images/card/vape1.webp',
           },
         },
-        {
-          image: '/images/card/vape1.webp',
-          mainText: 'PRODUCT 7',
-          subText: '25 reviews',
-          price: '$20.90',
-          discount: '$85.10',
-          rating: 5,
-          backgroundColor: '',
-          colors: {
-            green: '/images/card/vape1.webp',
-            blue: '/images/card/vape2.webp',
-            cyan: '/images/card/vape3.webp',
-            yellow: '/images/card/vape1.webp',
-          },
-        },
-        {
-          image: '/images/card/vape2.webp',
-          mainText: 'PRODUCT 8',
-          subText: '19 reviews',
-          price: '$23.90',
-          discount: '$87.90',
-          rating: 4,
-          backgroundColor: '',
-          colors: {
-            green: '/images/card/vape1.webp',
-            blue: '/images/card/vape2.webp',
-            cyan: '/images/card/vape3.webp',
-            yellow: '/images/card/vape1.webp',
-          },
-        },
-        {
-          image: '/images/card/vape3.webp',
-          mainText: 'PRODUCT 9',
-          subText: '22 reviews',
-          price: '$16.90',
-          discount: '$76.10',
-          rating: 5,
-          backgroundColor: '',
-          colors: {
-            green: '/images/card/vape1.webp',
-            blue: '/images/card/vape2.webp',
-            cyan: '/images/card/vape3.webp',
-            yellow: '/images/card/vape1.webp',
-          },
-        },
       ],
     };
   },
@@ -234,10 +186,10 @@ export default {
   },
   methods: {
     nextProduct() {
-      this.currentIndex = (this.currentIndex + 1) % this.products.length;
+      this.currentIndex = (this.currentIndex + 3) % this.products.length;
     },
     prevProduct() {
-      this.currentIndex = (this.currentIndex - 1 + this.products.length) % this.products.length;
+      this.currentIndex = (this.currentIndex - 3 + this.products.length) % this.products.length;
     },
     setCurrentIndex(index) {
       this.currentIndex = index;
@@ -335,6 +287,7 @@ export default {
   justify-content: center;
   align-items: center;
   gap: 40px;
+  margin-bottom: 50px;
 }
 .vector {
   display: inline-flex;
@@ -363,38 +316,79 @@ export default {
 }
 .dots-container {
   display: flex;
+  justify-content: center;
+  align-items: center;
   gap: 8px;
   margin-top: 20px;
-  width: 100%;
 }
 .dot {
-  width: 20px;
-  height: 20px;
-  position: relative;
-  cursor: pointer;
-}
-.dot .inner-dot {
   width: 12px;
   height: 12px;
-  position: absolute;
-  left: 4px;
-  top: 4px;
   background: rgba(94.33, 255, 67.98, 0.50);
   border-radius: 9999px; /* Полный радиус для круга */
+  cursor: pointer;
 }
-.dot .outer-circle {
-  width: 20px;
-  height: 20px;
-  position: absolute;
-  left: 0;
-  top: 0;
-  border-radius: 9999px; /* Полный радиус для круга */
-  border: 1px rgba(94.33, 255, 67.98, 0.50) solid;
-}
-.dot.active .inner-dot {
+.dot.active {
   background: #5EFF44;
 }
-.dot.active .outer-circle {
-  border-color: #5EFF44;
-}
 </style>
+
+.container { 
+  width: 100px;  
+  height: 20px;  
+  position: relative;  
+  justify-content: center;
+  align-items: center;
+}  
+
+.small-dot {  
+  display: flex;
+  width: 12px;  
+  height: 12px;  
+  position: absolute;  
+  background: rgba(94.33, 255, 67.98, 0.50);  
+  border-radius: 9999px; /* Полный радиус для круга */  
+}  
+
+.small-dot:nth-child(1) {  
+  left: 32px;  
+  top: 4px;  
+}  
+
+.small-dot:nth-child(2) {  
+  left: 60px;  
+  top: 4px;  
+}  
+
+.small-dot:nth-child(3) {  
+  left: 88px;  
+  top: 4px;  
+}  
+
+.big-dot {  
+  width: 20px;  
+  height: 20px;  
+  position: absolute;  
+  left: 0;  
+  top: 0;  
+}  
+
+.inner-dot {  
+  width: 12px;  
+  height: 12px;  
+  position: absolute;  
+  left: 4px;  
+  top: 4px;  
+  background: #5EFF44;  
+  border-radius: 9999px; /* Полный радиус для круга */  
+}  
+
+.outer-circle {  
+  width: 20px;  
+  height: 20px;  
+  position: absolute;  
+  left: 0;  
+  top: 0;  
+  border-radius: 9999px; /* Полный радиус для круга */  
+  border: 1px #5EFF44 solid;  
+}

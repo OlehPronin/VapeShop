@@ -15,3 +15,7 @@ loadLocaleMessages(i18n.global.locale.value).then(messages => {
 });
 
 app.mount("#app");
+createApp(App)
+  .use(router)
+  .use(store)
+  .mount('#app');
